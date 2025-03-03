@@ -1,0 +1,1 @@
+C:\Users\igort\Desktop\atividade\MauiAppListaDeCompras\MauiAppListaDeCompras\MauiAppListaDeCompras.csproj;x64

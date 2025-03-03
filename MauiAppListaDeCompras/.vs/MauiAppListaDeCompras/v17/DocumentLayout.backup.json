@@ -1,0 +1,110 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\igort\\Desktop\\atividade\\MauiAppListaDeCompras\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D9A10BF-6A5B-4328-B19E-405345659AB3}|MauiAppListaDeCompras\\MauiAppListaDeCompras.csproj|c:\\users\\igort\\desktop\\atividade\\mauiapplistadecompras\\mauiapplistadecompras\\helpes\\sqlitedatabasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D9A10BF-6A5B-4328-B19E-405345659AB3}|MauiAppListaDeCompras\\MauiAppListaDeCompras.csproj|solutionrelative:mauiapplistadecompras\\helpes\\sqlitedatabasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D9A10BF-6A5B-4328-B19E-405345659AB3}|MauiAppListaDeCompras\\MauiAppListaDeCompras.csproj|c:\\users\\igort\\desktop\\atividade\\mauiapplistadecompras\\mauiapplistadecompras\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D9A10BF-6A5B-4328-B19E-405345659AB3}|MauiAppListaDeCompras\\MauiAppListaDeCompras.csproj|solutionrelative:mauiapplistadecompras\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D9A10BF-6A5B-4328-B19E-405345659AB3}|MauiAppListaDeCompras\\MauiAppListaDeCompras.csproj|c:\\users\\igort\\desktop\\atividade\\mauiapplistadecompras\\mauiapplistadecompras\\view\\listaproduto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D9A10BF-6A5B-4328-B19E-405345659AB3}|MauiAppListaDeCompras\\MauiAppListaDeCompras.csproj|solutionrelative:mauiapplistadecompras\\view\\listaproduto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D9A10BF-6A5B-4328-B19E-405345659AB3}|MauiAppListaDeCompras\\MauiAppListaDeCompras.csproj|c:\\users\\igort\\desktop\\atividade\\mauiapplistadecompras\\mauiapplistadecompras\\view\\novoproduto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D9A10BF-6A5B-4328-B19E-405345659AB3}|MauiAppListaDeCompras\\MauiAppListaDeCompras.csproj|solutionrelative:mauiapplistadecompras\\view\\novoproduto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D9A10BF-6A5B-4328-B19E-405345659AB3}|MauiAppListaDeCompras\\MauiAppListaDeCompras.csproj|c:\\users\\igort\\desktop\\atividade\\mauiapplistadecompras\\mauiapplistadecompras\\view\\editarproduto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D9A10BF-6A5B-4328-B19E-405345659AB3}|MauiAppListaDeCompras\\MauiAppListaDeCompras.csproj|solutionrelative:mauiapplistadecompras\\view\\editarproduto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListaProduto.xaml",
+              "DocumentMoniker": "C:\\Users\\igort\\Desktop\\atividade\\MauiAppListaDeCompras\\MauiAppListaDeCompras\\View\\ListaProduto.xaml",
+              "RelativeDocumentMoniker": "MauiAppListaDeCompras\\View\\ListaProduto.xaml",
+              "ToolTip": "C:\\Users\\igort\\Desktop\\atividade\\MauiAppListaDeCompras\\MauiAppListaDeCompras\\View\\ListaProduto.xaml",
+              "RelativeToolTip": "MauiAppListaDeCompras\\View\\ListaProduto.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-03T02:05:42.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NovoProduto.xaml",
+              "DocumentMoniker": "C:\\Users\\igort\\Desktop\\atividade\\MauiAppListaDeCompras\\MauiAppListaDeCompras\\View\\NovoProduto.xaml",
+              "RelativeDocumentMoniker": "MauiAppListaDeCompras\\View\\NovoProduto.xaml",
+              "ToolTip": "C:\\Users\\igort\\Desktop\\atividade\\MauiAppListaDeCompras\\MauiAppListaDeCompras\\View\\NovoProduto.xaml",
+              "RelativeToolTip": "MauiAppListaDeCompras\\View\\NovoProduto.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-03T02:05:04.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EditarProduto.xaml",
+              "DocumentMoniker": "C:\\Users\\igort\\Desktop\\atividade\\MauiAppListaDeCompras\\MauiAppListaDeCompras\\View\\EditarProduto.xaml",
+              "RelativeDocumentMoniker": "MauiAppListaDeCompras\\View\\EditarProduto.xaml",
+              "ToolTip": "C:\\Users\\igort\\Desktop\\atividade\\MauiAppListaDeCompras\\MauiAppListaDeCompras\\View\\EditarProduto.xaml",
+              "RelativeToolTip": "MauiAppListaDeCompras\\View\\EditarProduto.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-03T02:04:20.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SQLiteDatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\igort\\Desktop\\atividade\\MauiAppListaDeCompras\\MauiAppListaDeCompras\\Helpes\\SQLiteDatabaseHelper.cs",
+              "RelativeDocumentMoniker": "MauiAppListaDeCompras\\Helpes\\SQLiteDatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\igort\\Desktop\\atividade\\MauiAppListaDeCompras\\MauiAppListaDeCompras\\Helpes\\SQLiteDatabaseHelper.cs",
+              "RelativeToolTip": "MauiAppListaDeCompras\\Helpes\\SQLiteDatabaseHelper.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T02:02:47.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\igort\\Desktop\\atividade\\MauiAppListaDeCompras\\MauiAppListaDeCompras\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "MauiAppListaDeCompras\\Models\\Produto.cs",
+              "ToolTip": "C:\\Users\\igort\\Desktop\\atividade\\MauiAppListaDeCompras\\MauiAppListaDeCompras\\Models\\Produto.cs",
+              "RelativeToolTip": "MauiAppListaDeCompras\\Models\\Produto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T02:01:20.587Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
