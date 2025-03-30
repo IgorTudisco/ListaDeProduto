@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppMinhasCompras.Views.RelatorioDeCompras">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Título do Relatório -->
+        <Label Text="Relatório de Compras por Categoria"
+        FontSize="20"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand" />
+
+        <!-- Lista de produtos -->
+        <Frame Padding="0" Margin="10" Grid.Row="2">
+            <!-- ListView que exibirá os dados -->
+            <ListView x:Name="relatorioListView"
+          IsPullToRefreshEnabled="True"
+          Refreshing="RelatorioListView_Refreshing">
+                <ListView.Header>
+                    <Grid ColumnDefinitions="*, *" BackgroundColor="{StaticResource Gray200}">
+                        <Label Grid.Column="0" Text="Categoria" FontAttributes="Bold" Padding="5"/>
+                        <Label Grid.Column="1" Text="Total Gasto" FontAttributes="Bold" Padding="5"/>
+                    </Grid>
+                </ListView.Header>
+                <!-- Template de Item -->
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid ColumnDefinitions="*, *">
+                                <Label Grid.Column="0" Text="{Binding Categoria}" Padding="5"/>
+                                <Label Grid.Column="1" Text="{Binding TotalGasto, StringFormat='{}{0:C}'}" Padding="5"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Frame>
+
+    </Grid>
+
+
+</ContentPage>
+

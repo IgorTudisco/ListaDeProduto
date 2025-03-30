@@ -22,7 +22,7 @@ public partial class EditarProduto : ContentPage
 
             Produto produtoAtualizado = new Produto
             {
-                Id = produto_recebido.Id,
+                Id = produto_recebido!.Id,
                 Descricao = txt_descricao.Text,
                 Quantidade = Convert.ToDouble(txt_quantidade.Text),
                 Preco = Convert.ToDouble(txt_preco.Text)
