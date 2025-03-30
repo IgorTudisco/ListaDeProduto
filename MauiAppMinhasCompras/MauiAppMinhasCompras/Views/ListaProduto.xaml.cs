@@ -17,11 +17,16 @@ public partial class ListaProduto : ContentPage
 
     protected async override void OnAppearing()
     {
-        base.OnAppearing();        
-
-        List<Produto> produtos = await App.DatabaseHelper.GetAll();
-
-        produtos.ForEach(produto => ProdutosList.Add(produto));
+        try
+        {
+            base.OnAppearing();
+            List<Produto> produtos = await App.DatabaseHelper.GetAll();
+            produtos.ForEach(produto => ProdutosList.Add(produto));
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Erro", ex.Message, "OK");
+        }
     }
 
     private void ToolbarItem_Clicked(object sender, EventArgs e)
@@ -32,7 +37,7 @@ public partial class ListaProduto : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Erro", ex.Message, "OK"); 
+            DisplayAlert("Erro", ex.Message, "OK");
         }
     }
 
@@ -75,13 +80,29 @@ public partial class ListaProduto : ContentPage
 
     private async void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
     {
-        string text = e.NewTextValue;
-
-        ProdutosList.Clear();
-
-        List<Produto> produtos = await App.DatabaseHelper.Search(text);
-
-        produtos.ForEach(produto => ProdutosList.Add(produto));
+        try
+        {
+            if (string.IsNullOrEmpty(e.NewTextValue))
+            {
+                List<Produto> produtos = await App.DatabaseHelper.GetAll();
+                ProdutosList.Clear();
+                produtos.ForEach(produto => ProdutosList.Add(produto));
+                return;
+            }
+            string text = e.NewTextValue;
+            list_produto.IsRefreshing = true;
+            ProdutosList.Clear();
+            List<Produto> produtosFiltrados = await App.DatabaseHelper.Search(text);
+            produtosFiltrados.ForEach(produto => ProdutosList.Add(produto));
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Erro", ex.Message, "OK");
+        }
+        finally
+        {
+            list_produto.IsRefreshing = false;
+        }
 
     }
 
@@ -101,5 +122,24 @@ public partial class ListaProduto : ContentPage
             DisplayAlert("Erro", ex.Message, "OK");
         }
 
+    }
+
+    private async void List_produto_Refreshing(object sender, EventArgs e)
+    {
+        try
+        {
+            base.OnAppearing();
+            ProdutosList.Clear();
+            List<Produto> produtos = await App.DatabaseHelper.GetAll();
+            produtos.ForEach(produto => ProdutosList.Add(produto));
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Erro", ex.Message, "OK");
+        }
+        finally
+        {
+            list_produto.IsRefreshing = false;
+        }
     }
 }

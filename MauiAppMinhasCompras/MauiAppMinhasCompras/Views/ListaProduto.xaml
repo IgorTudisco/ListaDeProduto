@@ -9,35 +9,52 @@
         <ToolbarItem Text="Adicionar" Clicked="ToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>
 
-    <VerticalStackLayout>
-        <SearchBar x:Name="searchBar" Placeholder="Pesquisar produtos" TextChanged="SearchBar_TextChanged"/>
-        <ListView x:Name="list_produto" ItemSelected="List_produto_ItemSelected">
-            <ListView.Header>
-                <Grid ColumnDefinitions="*, *, *, *, *">
-                    <Label Grid.Column="0" Text="Id" />
-                    <Label Grid.Column="1" Text="Descrição" />
-                    <Label Grid.Column="2" Text="Preco"/>
-                    <Label Grid.Column="3" Text="Quantidade" />
-                    <Label Grid.Column="4" Text="Total" />
-                </Grid>
-            </ListView.Header>
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <ViewCell.ContextActions>
-                            <MenuItem x:Name="protudo_excluir" Text="Excluir" Clicked="MenuItem_Clicked_Excluir"/>
-                        </ViewCell.ContextActions>
-                        <Grid ColumnDefinitions="*, *, *, *, *">
-                            <Label Grid.Column="0" Text="{Binding Id}" />
-                            <Label Grid.Column="1" Text="{Binding Descricao}" />
-                            <Label Grid.Column="2" Text="{Binding Preco}"/>
-                            <Label Grid.Column="3" Text="{Binding Quantidade}" />
-                            <Label Grid.Column="4" Text="{Binding Total}" />
-                        </Grid>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </VerticalStackLayout>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <SearchBar x:Name="searchBar" Margin="-15, 0, 0, 0" Placeholder="Pesquisar produtos" TextChanged="SearchBar_TextChanged" Grid.Row="0"/>
+
+        <Frame Padding="0" Margin="10" Grid.Row="1">
+            <ListView x:Name="list_produto" IsPullToRefreshEnabled="True" Refreshing="List_produto_Refreshing" ItemSelected="List_produto_ItemSelected">
+                <ListView.Header>
+                    <Grid ColumnDefinitions="30, 100, 80, 90, 50" BackgroundColor="{StaticResource Gray200}">
+                        <Label Grid.Column="0" Text="Id" Padding="5" FontAttributes="Bold"/>
+                        <Label Grid.Column="1" Text="Descrição" FontAttributes="Bold"/>
+                        <Label Grid.Column="2" Text="Preco" FontAttributes="Bold"/>
+                        <Label Grid.Column="3" Text="Quantidade" FontAttributes="Bold"/>
+                        <Label Grid.Column="4" Text="Total" FontAttributes="Bold"/>
+                    </Grid>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem x:Name="protudo_excluir" Text="Excluir" Clicked="MenuItem_Clicked_Excluir"/>
+                            </ViewCell.ContextActions>
+                            <Grid ColumnDefinitions="30, 100, 80, 50, 90">
+                                <Label Grid.Column="0" Text="{Binding Id}" Padding="5" FontAttributes="Bold"/>
+                                <Label Grid.Column="1" Text="{Binding Descricao}" />
+                                <Label Grid.Column="2" Text="{Binding Preco, StringFormat='{}{0:c}'}"/>
+                                <Label Grid.Column="3" Text="{Binding Quantidade}" />
+                                <Label Grid.Column="4" Text="{Binding Total, StringFormat='{}{0:c}'}" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Frame>
+        
+    </Grid>
 </ContentPage>
     

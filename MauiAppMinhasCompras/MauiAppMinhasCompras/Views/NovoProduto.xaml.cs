@@ -24,6 +24,7 @@ public partial class NovoProduto : ContentPage
             await App.DatabaseHelper.Insert(produto);
 
             await DisplayAlert("Sucesso", "Produto inserido com sucesso", "OK");
+            await Navigation.PopAsync();
         }
         catch (Exception ex)
         {
